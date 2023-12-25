@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//home dashboard
+Route::get('/home',[homeController::class,'home'])->name('dash.home');
+
 //view seat plan
 Route::get('/busSeat',[homeController::class,'viewBusSeat'])->name('bus.seat');
 
@@ -32,4 +32,16 @@ Route::get('/showTrip',[homeController::class,'showTrip'])->name('trip.show');
 Route::get('/trip',[homeController::class,'showTripForm'])->name('trip.form');
 //store new trip
 Route::post('/trip/store',[homeController::class,'storeTrip'])->name('trip.store');
+
+//ticket store
+Route::post('/ticket/store',[homeController::class,'storeTicket'])->name('ticket.store');
+
+//Show Login
+Route::get('/login',[homeController::class,'login'])->name('login.show');
+//login function
+Route::post('/loginFunction',[homeController::class,'loginFunction'])->name('login.function');
+
+//logout
+Route::get('/loginFunction',[homeController::class,'logout'])->name('logout.function');
+
 

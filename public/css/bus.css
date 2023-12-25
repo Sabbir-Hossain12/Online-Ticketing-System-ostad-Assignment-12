@@ -9,7 +9,7 @@ html {
 
 .plane {
     margin: 20px auto;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .exit {
@@ -185,4 +185,15 @@ ol {
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
 }
+
+.login-img
+{
+    height: 35rem;
+    width: 35rem;
+}
+.h-custom
+{
+    margin-top: 5rem;
+}
+
 

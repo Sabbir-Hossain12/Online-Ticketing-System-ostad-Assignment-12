@@ -15,12 +15,12 @@
                         <h2>Trip List</h2>
                         <p>Welcome sabbir!</p>
                         <div class="d-flex justify-content-between">
-                            <div>
-                                <!-- <a href="">All Students</a> -->
-                                <!-- <span> | </span> -->
-                                <a href=""><button class="btn btn-primary btn-sm">Add new Product</button></a>
-                                <a href=""><button class="btn btn-primary btn-sm mx-3">Sales Report</button></a>
-                            </div>
+{{--                            <div>--}}
+{{--                                <!-- <a href="">All Students</a> -->--}}
+{{--                                <!-- <span> | </span> -->--}}
+{{--                                <a href=""><button class="btn btn-primary btn-sm">Add new Product</button></a>--}}
+{{--                                <a href=""><button class="btn btn-primary btn-sm mx-3">Sales Report</button></a>--}}
+{{--                            </div>--}}
 
                         </div>
 
@@ -57,9 +57,9 @@
                                             <button class="btn btn-sm btn-danger mx-2" name="delete" type="submit">Delete Product</button>
                                         </td>
                                     </form>
-                                    <td>
-                                        <a href=""> <button class="btn btn-sm btn-warning mx-2" name="sell" type="submit">Sell</button></a>
-                                    </td>
+{{--                                    <td>--}}
+{{--                                        <a href=""> <button class="btn btn-sm btn-warning mx-2" name="sell" type="submit">Sell</button></a>--}}
+{{--                                    </td>--}}
 
 
                                 </tr>

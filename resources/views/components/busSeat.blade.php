@@ -1,12 +1,28 @@
 
 <section>
 
-    <form action="{{route('bus.seat')}}" method="post">
+    <form action="{{route('ticket.store')}}" method="post">
         @csrf
-<div class="plane">
-    <h1>Select Your Seat</h1>
-    <div class="fuselage">
 
+
+<div class="plane container">
+
+    <div class="form-outline mb-4">
+        <div class="mb-2">
+            <span class="">Select Trip</span>
+        </div>
+        <select class="form-control" name="trip" data-popper-placement="From">
+              @foreach($trips as $trip)
+                <option class="form-control" value="{{$trip->id}}" >
+  {{$trip->from}} to {{$trip->to}} ({{$trip->date}})
+                </option>
+            @endforeach
+        </select>
+
+
+    </div>
+    <div class="mb-2">
+    <span class="">Select Seats</span>
     </div>
     <ol class="cabin fuselage">
         <li class="row row--1">
@@ -294,11 +310,7 @@
     </ol>
 
 
-
-{{--    <div class="fuselage">--}}
-
-{{--    </div>--}}
-    <div class="d-flex align-items-center justify-content-center my-2"> <button type="submit" class="btn btn-primary ">Submit</button> </div>
+    <div class="d-flex align-items-center justify-content-center my-4"> <button type="submit" class="btn btn-primary ">Submit</button> </div>
 </div>
 
 
