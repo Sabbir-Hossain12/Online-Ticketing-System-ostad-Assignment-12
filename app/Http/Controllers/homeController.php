@@ -137,6 +137,21 @@ class homeController extends Controller
         return redirect()->back();
 
   }
+  function viewSoldTicket()
+  {
+
+      $tickes=seatAllocation::get();
+
+      $allocatedSeats = seatAllocation::with('trip')->get();
+
+
+
+
+      return view('pages.viewSoldTicket')->with([
+          'tickets'=>$tickes,
+          'allocatedSeats'=>  $allocatedSeats
+      ]);
+  }
 
 
 }

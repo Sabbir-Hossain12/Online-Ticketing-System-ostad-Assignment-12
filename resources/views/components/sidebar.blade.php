@@ -51,6 +51,11 @@
             <i class="fas fa-fw fa-cog"></i>
             <span class="">Buy Tickets</span>
         </a>
+        <a class="nav-link collapsed" href="{{route('view.sold')}}" >
+
+            <i class="fas fa-fw fa-cog"></i>
+            <span class="">Show Sold Tickets</span>
+        </a>
     </li>
 
 

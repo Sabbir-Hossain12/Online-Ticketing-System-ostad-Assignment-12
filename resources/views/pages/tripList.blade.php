@@ -33,6 +33,9 @@
                                 <th scope="col">Date</th>
                                 <th scope="col">From</th>
                                 <th scope="col">To</th>
+                                <th scope="col">Update</th>
+                                <th scope="col">Delete</th>
+
                                 {{--                            <th scope="col">Role</th>--}}
                             </tr>
                             </thead>

@@ -44,4 +44,5 @@ Route::post('/loginFunction',[homeController::class,'loginFunction'])->name('log
 //logout
 Route::get('/loginFunction',[homeController::class,'logout'])->name('logout.function');
 
-
+//view sold ticket table
+Route::get('/viewSoldTicket',[homeController::class,'viewSoldTicket'])->name('view.sold');
